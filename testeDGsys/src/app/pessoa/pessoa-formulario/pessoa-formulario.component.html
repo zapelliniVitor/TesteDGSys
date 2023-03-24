@@ -1,1 +1,75 @@
-<p>pessoa-formulario works!</p>
+<div>
+  <form [formGroup]="pessoaForm" (ngSubmit)="onSubmit()">
+    <div class="container">
+
+      <div class="box">
+        <label for="Nome">1. Nome Completo</label>
+        <br>
+        <input type="text" pInputText formControlName="Nome" placeholder="Nome Completo" class="center-input"/>
+      </div>
+
+      <div class="box">
+        <label for="Apelido">2. Apelido</label>
+        <br>
+        <input type="text" pInputText formControlName="Apelido" placeholder="Apelido" />
+      </div>
+
+      <div class="box">
+        <label for="CPF">3. CPF</label>
+        <br>
+        <input type="text" pInputText formControlName="CPF" placeholder="CPF" />
+      </div>
+
+      <div class="box">
+        <label for="Email">4. Email</label>
+        <br>
+        <input type="text" pInputText formControlName="Email" placeholder="Email" />
+      </div>
+
+      <div class="box">
+        <label for="Rua">5. Rua</label>
+        <br>
+        <input type="text" pInputText formControlName="Rua" placeholder="Rua" />
+      </div>
+
+      <div class="box">
+        <label for="Numero">6. Numero</label>
+        <br>
+        <input type="text" pInputText formControlName="Numero" placeholder="Numero" />
+      </div>
+
+      <div class="box">
+        <label for="Bairro">7. Bairro</label>
+        <br>
+        <input type="text" pInputText formControlName="Bairro" placeholder="Bairro" />
+      </div>
+
+      <div class="box">
+        <label for="Complemento">8. Complemento</label>
+        <br>
+        <input type="text" pInputText formControlName="Complemento" placeholder="Complemento" />
+      </div>
+
+      <div class="box">
+        <label for="Municipio">9. Municipio</label>
+        <br>
+        <input type="text" pInputText formControlName="Municipio" placeholder="Municipio" />
+      </div>
+
+      <div class="box">
+        <label for="Uf">10. Uf</label>
+        <br>
+        <input type="text" pInputText formControlName="Uf" placeholder="Uf" />
+      </div>
+      <div class="box">
+        <label for="Ativo">11.Ativo</label>
+        <br>
+        <p-toggleButton formControlName="Ativo" onLabel="Sim" offLabel="Não"></p-toggleButton>
+      </div>
+    </div>
+    <div style="display: grid; justify-items: center;">
+      <p-button type="submit">Finalizar</p-button>
+    </div>
+  </form>
+  <p-toast></p-toast>
+</div>

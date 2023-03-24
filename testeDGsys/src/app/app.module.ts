@@ -19,6 +19,7 @@ import { PrimeNgAntdModule } from 'src/modulos/prime-ng-antd.module';
     RouterModule,
     AppRoutingModule,
     PessoaModule,
+    PrimeNgAntdModule
   ],
   providers: [],
   bootstrap: [AppComponent]

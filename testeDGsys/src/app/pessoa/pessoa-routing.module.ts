@@ -6,8 +6,8 @@ import { PessoaListagemComponent } from './pessoa-listagem/pessoa-listagem.compo
 
 const routes: Routes = [
   { path: '', component: PessoaListagemComponent, data: { breadcrumb: 'Pessoas' } },
-  { path: 'form', component: PessoaFormularioComponent, data: { breadcrumb: 'Nova Pessoa' } },
-  { path: 'form/:id', component: PessoaFormularioComponent, data: { breadcrumb: 'Editar Pessoa' } }
+  { path: 'pessoas/form', component: PessoaFormularioComponent, data: { breadcrumb: 'Nova Pessoa' } },
+  { path: 'pessoas/form/:id', component: PessoaFormularioComponent, data: { breadcrumb: 'Editar Pessoa' } }
 ];
 
 @NgModule({
